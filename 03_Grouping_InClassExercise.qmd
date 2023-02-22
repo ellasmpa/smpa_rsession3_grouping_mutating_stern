@@ -39,11 +39,9 @@ Questions - Write your code using grouping in the chunks below to help answer th
 ```{r}
 # 1) How many members in the dataset who are holdouts on impeachment (NO in for_impeachment) vs. supporters (YES)?
 
-
-
-
-
-
+impeach %>% 
+  group_by(for_impeachment) %>% 
+  summarize(n())
 
 ```
 
@@ -54,13 +52,9 @@ Questions - Write your code using grouping in the chunks below to help answer th
        # - those who are for or against impeachment
        # - districts above/below national GDP
 
-
-
-
-
-
-
-
+impeach %>% 
+  group_by(for_impeachment) %>% 
+  summarize(n())
 
 ```
 
